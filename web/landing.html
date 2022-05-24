@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Air Phoenix ~ Above and Beyond.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="header.css">
+
+    
+
+    <!-- Custom styles for this template -->
+    <link href="landing.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Login Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login Here</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="get" class="lg">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+    <header>
+        <!-- Navigation Bar-->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="landing.html">
+                  <img src="asset/navlogo.png" id="img">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="landing.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="flight.html">Flights</a>
+                  </li>
+                  
+                  
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link"  href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone phone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>+ 01 234 567 88</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope email" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>Airphoenix@airlines.com</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" id="log" data-bs-toggle="modal" data-bs-target="#login">Log in</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="signup.html" id="sign" >Sign Up</a>
+                    </li>
+                    
+                  </ul>
+                  
+              </div>
+              
+            </div>
+            
+          </nav>
+        <!-- End Navigation Bar-->
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+
+
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="asset/airplane-flying-in-sunset.jpg" class="img-fluid" alt="..." >
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                    <div class="container">
+
+                        <div class="carousel-caption text-start" id="first">
+
+
+                            <img src="asset/airlogo.png" class="img-fluid" id="imgone">
+                            <h1>Above and Beyond</h1>
+                            <p>To experience a splendid journey</p>
+                            <p><a class="btn btn-outline-secondary" id="wall" href="signup.html">Book Tickets</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/GettyImages-150127577-58f920153df78ca159d41100.jpg" class="img-fluid" alt="..." id="img1">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+
+                            <h1>Ready to Travel?</h1>
+                            <p>We’ve Got Great Flight Deals!</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/airplane_sunset_takeoff.jpg" class="img-fluid" alt="..." id="img1">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+
+                            <h1>Start Packing! Countries are Open for Travel!</h1>
+                            <p></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            
+            
+
+            <!-- Three columns of text below the carousel -->
+            
+            <!-- /.row -->
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Luxury and Comfortable Travelling. <span class="text-muted"></span></h2>
+                    <p><br></p>
+                    <p class="lead">Book air tickets for a luxury first class flying experience or a comfortable economy flight to reach your destination.</p>
+                </div>
+                <div class="col-md-5">
+                    <p><br><br><br></p>
+                    <img src="asset/first class flying.jpg" class="img-fluid" alt="...">
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <p><br></p>
+                    <h2 class="featurette-heading">Flexible Schedule. <span class="text-muted">Cheap Prices.</span></h2>
+                    <p><br></p>
+                    <p class="lead">Mixing and matching airlines tickets and fare types could help save money on airfare to your destination. These tickets can be browsed wherever you are, according to your schedule. </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <p><br><br><br><br><br></p>
+                    <img src="asset/cheap_flights-1.jpg" class="img-fluid" alt="..." class="feaurette-image img-fluid mx-auto">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            
+            
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+
+        <!-- /.container -->
+
+        <section id="services">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 mx-auto text-center">
+                        <h6 class="text-primary">SERIVCES</h6>
+                        <h1>Our Services</h1>
+                        <p>Airphoenix Is home to a mix of modern and remarkable precincts that offer unique and authentic experiences. Browse our exclusive Airphoenix special services below.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect bounceInUp">
+                            <div class="iconbox">
+                                <i class='bx bxs-check-shield'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Infight Wi-Fi </h5>
+                            <p>Stay productive while you fly with in-flight Wi-Fi on Airphoenix. 
+                              Answer your emails, surf the internet or chat with your friends online.
+                               </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-comment-detail'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Business class upgrade </h5>
+                            <p>Place your bid online to stand a chance to obtain an upgrade to business class </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-cog'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Baggage Allowances</h5>
+                            <p>Pre-purchase additional baggage allowance and get discounts </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-heart'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Fly Well</h5>
+                            <p>Your safety is our highest priority. From contactless check-in, self-service Bag Drop and boarding, to face masks and hand sanitizing stations, our health and wellbeing measures mean you can travel with confidence. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-rocket'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Student Special</h5>
+                            <p>You will get an EXTRA 10kg of baggage allowance complimentary from SriLankan Airlines and 10% discount on second air ticket </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="service card-effect">
+                            <div class="iconbox">
+                                <i class='bx bxs-doughnut-chart'></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Advance Seat Reservation</h5>
+                            <p>Prefer a window or an Aisle seat? Now you can secure your preferred seat well in advance at a fee before online check-in opens! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="featurette-divider">
+        <div></div>
+        <div></div>
+        <!-- FOOTER -->
+
+        
+        <footer
+                class=" text-white"
+                style="background-image: url(asset/bg4.jpg);  "
+                >
+          <!-- Grid container -->
+          <div class="container p-2 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                    about us
+                  </h6>
+                  <p style="text-align: left;">
+                    Phoenix connects the world to, and through, our global hub in Srilanka. We operate modern, efficient and comfortable aircraft, and our culturally diverse workforce delivers award-winning services to our custmers
+                    across six continents every day.
+  
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">site map</h6>
+                  <p>
+                    <a href="landing.html" class="text-white" id="footer">HOME</a>
+                  </p>
+                  <p>
+                    <a href="flight.html" class="text-white" id="footer">FLIGHTS</a>
+                  </p>
+                 
+                  <p>
+                    <a href="signup.html" class="text-white" id="footer">SING UP</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                  <p><i class="fas fa-home mr-3"></i> Colombo,Srilanka</p>
+                  <p><i class="fas fa-envelope mr-3"></i> Airphoenix@airlines.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+      
+                  <!-- Facebook -->
+                    <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #3b5998"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    
+      
+                  <!-- Twitter -->
+                  <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #55acee"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-twitter"></i
+                    ></a>
+      
+                  <!-- Google -->
+                  <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #dd4b39"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-google"></i
+                    ></a>
+      
+                  <!-- Instagram -->
+                  <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #ac2bac"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-instagram"></i
+                    ></a>
+      
+                  <!-- Linkedin -->
+                  <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #0082ca"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  <!-- Github -->
+                  <a
+                     class="btn btn-primary btn-floating m-1"
+                     style="background-color: #333333"
+                     href="#!"
+                     role="button"
+                     ><i class="fab fa-github"></i
+                    ></a>
+                </div>
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+          </div>
+          <!-- Grid container -->
+      
+         
+          <div
+               class="text-center p-3 Copyright"
+               style="background-color: rgba(48, 2, 2, 0.2)"
+               >
+            © 2022 Copyright: Air Phoenix
+            <!--
+            <a class="text-white" href="https://mdbootstrap.com/"
+               >MDBootstrap.com</a
+              >
+            -->
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
+    </main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</html>
